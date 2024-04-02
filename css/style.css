@@ -1,0 +1,451 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+/* Button Section */
+.btn {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  transition: .5s;
+}
+.btn{
+  border: 2px solid rgb(81, 225, 81);
+  color: white;
+}
+.btn-black{
+  border: 2px solid rgb(81, 225, 81);
+  color: black;
+  background-color:rgb(81, 225, 81) ;
+}
+.btn-black:hover{
+  border: 2px solid rgb(81, 225, 81);
+  background-color: rgb(81, 225, 81);
+  color: black;
+}
+
+.btn:hover{
+  border: 2px solid rgb(81, 225, 81);
+  background-color:rgb(81, 225, 81) ;
+  color: black;
+}
+
+.black-text{
+  color: black;
+}
+.white-text{
+  color: white;
+}
+
+/* Navigation Section */
+.navbar-nav .nav-link{
+    margin-left: 10px;
+    padding: 35px 0;
+    color:white;
+    
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    transition: .5s;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+}
+
+ .navbar-nav .nav-link:hover{
+    color: grey;
+}
+
+  .navbar-brand h1{
+    color: white;
+    /* color:rgb(81, 225, 81); */
+}
+ .navbar-toggler {
+    color: rgb(81, 225, 81) ;
+    border-color: rgb(81, 225, 81);
+}
+
+
+.nav-tabs{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.nav-tabs .nav-link{
+    margin-bottom: 4px;
+}
+
+.navbar.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.857);
+  
+  }
+  /* Navigation Section End */
+
+.tab-content{
+    margin-top: 3rem;
+}
+
+ /* BOX SECTION */
+.box-con{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.437);
+  z-index: 99;
+  position: relative;
+  margin-top: -130px;
+   background: rgba(0, 0, 0, 0.834);
+   padding:10px;
+   border-radius: 5px;
+}
+
+@media (max-width: 767.98px) {
+   .box {
+    border: 1px solid rgb(81, 225, 81) !important;
+    border-radius: 0.2rem;
+    padding: 30px;
+    /* margin-bottom: 30px; */
+    margin-top: 20px;
+  }
+  .box-con{
+    box-shadow: none;
+  }
+}
+
+/* Carousel Section */
+.carousel-caption {
+  /* top: 40%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.538);
+}
+
+.line{
+  width: 50%;
+  height: 2px;
+  background-color:white ;
+  margin: 5px 0;
+}
+
+.headline {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color:white;
+}
+
+.subheadline {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color:white;
+}
+
+.caption-items{
+  max-width: 900px;
+}
+.carousel-item img{
+    height: 100vh;
+    /* opacity: 0.7; */
+}
+
+
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+/* Carousel Section End */
+
+
+
+/* PROPERTIE AQUISITION */
+
+.section-container {
+  position:relative;
+  
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 0;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.circle-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dark transparent overlay */
+}
+
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding:20px;
+  border-radius: 50%;
+  border: 2px solid rgb(81, 225, 81);
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+  /* Arrow style */
+  .arrow {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(255, 255, 255, 0.8);
+  }
+.dark-overlay {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.576); /* Adjust the transparency here */
+  opacity: 1;
+}
+
+
+/* Available properties */
+
+.property-card {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.property-card img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.property-card:hover img {
+  filter: brightness(70%); /* Darken the image on hover */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay color with 50% opacity */
+  opacity: 0; /* Start with 0 opacity */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.property-card:hover .overlay {
+  opacity: 1; /* Make the overlay visible on hover */
+}
+
+.buy-now-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(81, 225, 81); /* Bootstrap primary color */
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0; /* Start with 0 opacity */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.property-card:hover .buy-now-btn {
+  opacity: 1; /* Make the button visible on hover */
+ 
+}
+
+.carousel-control-prev,
+    .carousel-control-next {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.089); /* Dark background color */
+      color: white;
+      font-size: 24px;
+      line-height: 50px;
+      text-align: center;
+      opacity: 0.7; /* Initial opacity */
+      transition: opacity 0.5s ease-in-out;
+      margin-top: 100px;
+    }
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      opacity: 1; /* Increase opacity on hover */
+    }
+
+    /* Remove text from carousel controls */
+    .carousel-control-prev-icon:before,
+    .carousel-control-next-icon:before {
+      content: ''; /* Remove content (text) from controls */
+    }
+
+    /* Arrange controls next to each other */
+    .carousel-control-prev {
+      left: calc(-50px - 5px); /* Adjust the space between controls */
+    }
+
+    .carousel-control-next {
+      right: calc(-50px - 5px); /* Adjust the space between controls */
+    }
+.property-details p,h6 {
+ color: black;
+}
+
+
+.blog-section {
+  margin-top: 50px;
+}
+
+.blog-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.blog-container {
+  /* box-shadow:  0 0 30px black; */
+  /* border: 1px solid black; */
+  border-radius: 10px;
+background:black;
+
+/* background-image: url(/img/home-3.jpg); */
+
+}
+.blog-container p{
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+.blog-container h3,h4{
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.blog-box {
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.writer-info {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow: hidden;
+}
+
+.writer-image {
+  width: 200%;
+  height: 200px;
+  border-radius: 10px;
+
+}
+
+.writer-logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+}
+
+.blog-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.blog-topic {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.blog-content {
+  margin-top: 10px;
+}
+
+.read-more-btn {
+  margin-top: 10px;
+}
+
+.blog-item{
+  /* border-bottom: 3px solid rgb(81, 225, 81); */
+  box-shadow: 0 0 10px rgb(81, 225, 81);
+}
+
+
+
+
+/* FOOTER */
+
+
+.footer-section {
+  background-color: black;
+  padding: 40px 0;
+  box-shadow: 0 0 10px rgba(81, 225, 81, 0.287) ;
+}
+.footer-section a{
+  color: rgb(81, 225, 81);
+}
+.footer-section h5,p{ 
+  color: white;
+}
+
+.social-link {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.my-4 {
+  margin-top: 4rem !important;
+  margin-bottom: 4rem !important;
+  background-color: rgba(81, 225, 81, 0.553);
+}
